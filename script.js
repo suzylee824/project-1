@@ -1,4 +1,3 @@
-$(document).ready(function(){
-    // debugger;
-    $("#difficultiyHeader").hide().fadeIn("slow")
-})
+
+    $("#difficultiyHeader").fadeIn("slow")
+

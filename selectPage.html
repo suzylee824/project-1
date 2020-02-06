@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+      integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+      crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Heebo:500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css"/>
@@ -43,14 +47,14 @@
         <h2 id="targetAreaHeader">Target Area: </h2>
 
         <div class="firstRowBtn">
-        <button class="buttonD buttonTar" id="chest" value="0" >Chest</button>
-        <button class="buttonD buttonTar" id="legs" value="1" >Legs</button>
-        <button class="buttonD buttonTar" id="back" value="2" >Back</button>
+        <button class="buttonD buttonTar" id="chest" value="0" data-work="chest">Chest</button>
+        <button class="buttonD buttonTar" id="legs" value="1" data-work="legs">Legs</button>
+        <button class="buttonD buttonTar" id="back" value="2" data-work="back">Back</button>
         </div>
         <div class="secondRowBtn">
-        <button class="buttonD buttonTar" id="shoulders" value="3" >Shoulders</button>
-        <button class="buttonD buttonTar" id="arms" value="4" data-diffuculty="">Arms</button>
-        <button class="buttonD buttonTar" id="core" value="5" >Core</button>
+        <button class="buttonD buttonTar" id="shoulders" value="3" data-work="shoulders">Shoulders</button>
+        <button class="buttonD buttonTar" id="arms" value="4" data-work="arms">Arms</button>
+        <button class="buttonD buttonTar" id="core" value="5" data-work="core">Core</button>
         </div>
     </section>
 
@@ -59,6 +63,14 @@
     <button class="submitBtn">SUBMIT</button>
 
 </div>
+
+<footer class="footer1">
+
+  <a href="contactUs.html">Contact Us</a>
+  <a href="socialMedia.html">Social Media</a>
+  <a href="aboutUs.html">About Us</a>
+  
+</footer>
 
 <script type="text/javascript" src="script.js"></script>
 </body>

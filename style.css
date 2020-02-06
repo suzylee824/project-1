@@ -1,3 +1,15 @@
+.footer1{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(19, 18, 18);
+    height: 30px;
+    padding: 40px;
+    color: white;
+}
+
 .hero-body {
     background-image: url("images/fitness.jpeg");
     background-size: cover;
@@ -90,3 +102,55 @@ a {
     font-family: Heebo;
     font-size: 30px;
 }
+
+
+
+@media only screen and (min-width: 768px) {
+    #chest {
+        background-image: url("images/chest.jpeg");
+        width: 220px;
+        height: 200px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #legs {
+        background-image: url("images/legs.jpeg");
+        width: 220px;
+        height: 200px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #back {
+        background-image: url("images/back.jpeg");
+        width: 220px;
+        height: 200px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #shoulders {
+        background-image: url("images/shoulders.jpeg");
+        width: 220px;
+        height: 200px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #arms{
+        background-image: url("images/arms.jpeg");
+        width: 220px;
+        height: 200px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #core {
+        background-image: url("images/core.jpeg");
+        width: 220px;
+        height: 200px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+  }
