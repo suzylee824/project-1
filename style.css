@@ -1,0 +1,92 @@
+.hero-body {
+    background-image: url("images/fitness.jpeg");
+    background-size: cover;
+}
+
+.allOut {
+    color: rgb(241, 213, 213);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+#startBtn {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgb(219, 113, 26);
+    border-color: rgb(219, 113, 26); 
+    font-family: Heebo;
+    color: black;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.difficulty {
+    margin: 40px;
+    text-align: center;
+}
+
+.targetArea {
+    margin: 40px;
+    text-align: center; 
+}
+
+#difficultyHeader{
+    font-size: 30px;
+    font-family: Heebo;
+}
+
+#targetAreaHeader {
+    font-size: 30px;
+    font-family: Heebo;
+}
+
+a {
+    color: black;
+}
+
+.buttonD {
+    width: 30%;
+    height: 40px;
+    margin: 10px;
+    font-family: Heebo;
+    font-size: 15px;
+    background-color: rgb(219, 113, 26);
+    border-radius: 5px;
+    color: white;
+}
+
+.firstRowBtn{
+    text-align:center;
+}
+
+.secondRowBtn {
+    text-align: center;
+}
+
+.submitBtn{
+    font-family: Heebo;
+    width: 25%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    float: right;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: auto;
+}
+
+#results {
+    padding-top: 150px;
+}
+
+.finalWorkOut {
+    text-align: center;
+    font-family: Heebo;
+    font-size: 30px;
+}
