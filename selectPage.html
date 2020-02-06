@@ -16,7 +16,6 @@
 </head>
 
 <body>
-    
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="index.html">
@@ -29,18 +28,39 @@
             <span aria-hidden="true"></span>
           </a>
         </div>
-    </nav>
+      </nav>
 
-    <div class="container" id="results">
-        <section class="finalWorkOut">
-            <h2>Your Customized Work Out:</h2>
-        </section>
+<div class= "container">
 
+    <section class="difficulty">
+        <h2 id="difficultyHeader">Choose your fitness level: </h2>
+        <button class="buttonD buttonDiff" id="beginnerBtn" data-diff="beginner">Beginner</button>
+        <button class="buttonD buttonDiff" id="intermediateBtn" data-diff="intermediate">Intermediate</button>
+        <button class="buttonD buttonDiff" id="advancedBtn" data-diff="advanced">Advanced</button>
+    </section>
 
-    </div>
-    
+    <section class="targetArea">
+        <h2 id="targetAreaHeader">Target Area: </h2>
 
-  <script type="text/javascript" src="script.js"></script>
+        <div class="firstRowBtn">
+        <button class="buttonD buttonTar" id="chest" value="0" >Chest</button>
+        <button class="buttonD buttonTar" id="legs" value="1" >Legs</button>
+        <button class="buttonD buttonTar" id="back" value="2" >Back</button>
+        </div>
+        <div class="secondRowBtn">
+        <button class="buttonD buttonTar" id="shoulders" value="3" >Shoulders</button>
+        <button class="buttonD buttonTar" id="arms" value="4" data-diffuculty="">Arms</button>
+        <button class="buttonD buttonTar" id="core" value="5" >Core</button>
+        </div>
+    </section>
+
+    <br/>
+
+    <button class="submitBtn">SUBMIT</button>
+
+</div>
+
+<script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
