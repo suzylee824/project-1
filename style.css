@@ -63,11 +63,20 @@
     color: white;
 }
 
-.buttonD:focus {
+.contactSubmit {
+    border-radius: 5px;
+    width: 18%;
+    height: 40px;
+    font-size: 15px;
+    font-family: Heebo;
+}
+
+.buttonD:focus, .submitBtn:focus, .contactSubmit:focus {
     outline-color: gray;
 }
 
-.buttonTar{
+
+.buttonTar, .contactSubmit{
     border-color:  rgb(219, 113, 26);
 }
 
@@ -188,6 +197,10 @@
     }
 
     .contactFooter {
-
+        position:fixed;
+        left:0px;
+        bottom:0px;
+        height:30px;
+        width:100%;
     }
   }
