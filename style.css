@@ -119,12 +119,12 @@
 }
 
 #contactCard {
-    padding: 153px;
+    padding: 125px;
     font-family: Heebo;
 }
 
 #cardContent {
-    width: 70%;
+    width: 100%;
     margin: auto;
     border: 1px solid;
     border-color: rgb(219, 113, 26); 
@@ -183,6 +183,11 @@
   @media only screen and (max-width: 600px) {
     
     #contactCard {
-        padding: 20px;
+        margin: auto;
+        padding: 30px;
+    }
+
+    .contactFooter {
+
     }
   }
