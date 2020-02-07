@@ -1,0 +1,188 @@
+.footer1{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(19, 18, 18);
+    height: 20px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.hero-body {
+    background-image: url("images/fitness.jpeg");
+    background-size: cover;
+}
+
+.allOut {
+    color: rgb(241, 213, 213);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#startBtn {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgb(219, 113, 26);
+    border-color: rgb(219, 113, 26); 
+    font-family: Heebo;
+    color: black;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.difficulty, .targetArea {
+    margin: 40px;
+    text-align: center;
+}
+
+
+#targetAreaHeader, #musicAreaHeader, #difficultyHeader {
+    font-size: 30px;
+    font-family: Heebo;
+}
+
+.startText {
+    color: black;
+}
+
+.buttonD {
+    width: 30%;
+    height: 40px;
+    margin: 10px;
+    font-family: Heebo;
+    font-size: 15px;
+    background-color: rgb(219, 113, 26);
+    border-radius: 5px;
+    color: white;
+}
+
+.buttonD:focus {
+    outline-color: gray;
+}
+
+.buttonTar{
+    border-color:  rgb(219, 113, 26);
+}
+
+.buttonDiff:hover, .buttonMusic:hover {
+    background-color: rgb(247, 164, 96)
+}
+
+.buttonTar:hover {
+    opacity: 0.7;
+}
+
+.submitBtn:hover {
+    background-color: rgb(54, 52, 52);
+}
+
+.firstRowBtn, .secondRowBtn{
+    text-align:center;
+}
+
+
+.submitBtn{
+    font-family: Heebo;
+    width: 25%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    margin: auto;
+}
+
+#results {
+    padding-top: 150px;
+}
+
+.finalWorkOut {
+    text-align: center;
+    font-family: Heebo;
+    font-size: 30px;
+}
+
+.footerText {
+    color:white; 
+
+}
+
+.contactHeader {
+    font-size: 40px;
+}
+
+#contactCard {
+    padding: 153px;
+    font-family: Heebo;
+}
+
+#cardContent {
+    width: 70%;
+    margin: auto;
+    border: 1px solid;
+    border-color: rgb(219, 113, 26); 
+}
+
+@media only screen and (min-width: 768px) {
+    #chest {
+        background-image: url("images/chest.jpeg");
+        width: 220px;
+        height: 200px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #legs {
+        background-image: url("images/legs.jpeg");
+        width: 220px;
+        height: 200px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #back {
+        background-image: url("images/back.jpeg");
+        width: 220px;
+        height: 200px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #shoulders {
+        background-image: url("images/shoulders.jpeg");
+        width: 220px;
+        height: 200px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #arms{
+        background-image: url("images/arms.jpeg");
+        width: 220px;
+        height: 200px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #core {
+        background-image: url("images/core.jpeg");
+        width: 220px;
+        height: 200px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+    #contactCard {
+        padding: 20px;
+    }
+  }
