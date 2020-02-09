@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/cd40cdb9bb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 
-    <title>All Out</title>
+    <title>All Out Work Out</title>
 </head>
 
 <body>
@@ -35,29 +35,84 @@
         </div>
     </nav>
 
-    <div class="container" id="results">
-        <section class="finalWorkOut">
-            <h2>Here is your ALL OUT work out!</h2>
-        </section>
+    <div class="container" id="result">
+        <div class="finalWorkOut">
+            <h2 >Here is your <strong class="allOutGen">ALL OUT</strong> work out!</h2>
+        </div>
 
-        <div class="reco">
+        <div class="columns" id="firstColumn">
+
+          <div class="column" id="resultSection">
+
+          <div class="recoSection">
+              <div class="reco">
+                
+              </div>
+            </div>
+
+            <br/>
+
+          <div class="workOutSection">
+            <div class="workOut">
+              <p class="exercise">Mark the checkbox when you're done with an exercise</p>
+              <label class= "WOcheckbox"></label>
+              </label>
+
+            </div>
+          </div>
+
+          </div>
+
+          <div class="column is-one-third" id="searchArea">
+            <div class="field has-addons">
+              <div class="control">
+                <input class="input" type="text" placeholder="Search Radio">
+              </div>
+              <div class="control" id="music-key">
+                <a class="button is-info musicKey">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </div>
+
+            <ul id="musicList">
+            </ul>
+
+          </div>
+
 
         </div>
 
-        <div class="workOut">
+        <div class="columns">
+
+          <div class="mapSection">
+
+            <h3 class="mapHeader">Gyms near You:</h3>
+            <p>(Allow access to your location)</p>
+            <div id="map"></div>
+            <div id="results" style='width:65%; position:relative; top:0;right:0'></div>
+
+
+          </div>
 
         </div>
+
     </div>
 
 
 
+  <script type="text/javascript" src="scriptGen.js"></script>
   <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="scriptMap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfjKSMldEsLSZY9wAnOvIe7ZJFE3BdKZw" async defer></script>
+
 </body>
 
 <footer class="footer1">
 
   <a class="footerText" href="contactUs.html">Contact // </a>
-  <a class="footerText" href="aboutUs.html">About</a>
+  <a class="footerText" href="aboutUs.html">About Us</a>
 
 </footer>
 

@@ -43,7 +43,7 @@
 }
 
 
-#targetAreaHeader, #musicAreaHeader, #difficultyHeader {
+#targetAreaHeader, #difficultyHeader {
     font-size: 30px;
     font-family: Heebo;
 }
@@ -75,12 +75,16 @@
     outline-color: gray;
 }
 
+.buttonD:checked {
+    outline-color: gray;
+}
 
-.buttonTar, .contactSubmit{
+
+.buttonTar, .contactSubmit {
     border-color:  rgb(219, 113, 26);
 }
 
-.buttonDiff:hover, .buttonMusic:hover {
+.buttonDiff:hover, .button.is-info:hover {
     background-color: rgb(247, 164, 96)
 }
 
@@ -96,6 +100,10 @@
     text-align:center;
 }
 
+#msgLevel {
+    color: red;
+    font-weight: bold;
+}
 
 .submitBtn{
     font-family: Heebo;
@@ -108,8 +116,8 @@
     margin: auto;
 }
 
-#results {
-    padding-top: 150px;
+#result {
+    padding: 50px;
 }
 
 .finalWorkOut {
@@ -123,13 +131,16 @@
 
 }
 
-.contactHeader {
+.contactHeader, .aboutHeader {
     font-size: 40px;
+    font-family: Heebo;
 }
 
 #contactCard {
-    padding: 125px;
+    padding: 78px;
     font-family: Heebo;
+    margin: auto;
+    width: 50%;
 }
 
 #cardContent {
@@ -137,7 +148,134 @@
     margin: auto;
     border: 1px solid;
     border-color: rgb(219, 113, 26); 
+    border-radius: 5px;
 }
+
+#socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.fab {
+    margin: 10px;
+    color:rgb(219, 113, 26);
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.button.is-info {
+    background-color: rgb(219, 113, 26);
+    border-color: transparent;
+    color: #fff;
+}
+
+.columns {
+    margin: 10px;
+}
+
+.allOutGen {
+    color:rgb(219, 113, 26);
+}
+
+.aboutHeader {
+    padding: 25px;
+    text-shadow: 2px 2px 5px rgb(219, 113, 26);
+    color: rgb(68, 66, 66);
+}
+
+.aboutCard {
+    height: 100%;
+}
+
+#searchArea{
+    background-color: rgb(238, 231, 231);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.listItem {
+    border: 2px solid rgb(219, 113, 26);
+    border-radius: 5px;
+    background-color: white;
+    font-weight:bold;
+    padding: 5px;
+    margin: 8px;
+}
+
+.mapHeader {
+    font-size: 22px;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.exercise {
+    padding: 5px;
+}
+
+.checkbox {
+    float: right;
+    -webkit-appearance: none;
+    border: 1px solid rgb(219, 113, 26);
+    padding: 10px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.checkbox:checked {
+    background-color: rgb(219, 113, 26);
+    outline-color: orange;
+}
+
+.checkbox:not(:checked) {
+    outline-color: orange;
+}
+
+.recoSection, .workOutSection {
+    border: 2px solid rgb(219, 113, 26);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.workOutItem {
+    padding: 5px;
+    background-color: rgb(238, 231, 231);
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#map{
+	width: 100%;
+    height: 250px;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.mapSection {
+    border: 2px solid rgb(219, 113, 26);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#results {
+    display: inline-block;
+}
+
+#resultSection {
+    padding-left: 0px !important;
+}
+
 
 @media only screen and (min-width: 768px) {
     #chest {
@@ -187,13 +325,24 @@
         font-weight: bold;
         font-size: 30px;
     }
+
+    .aboutFooter {
+        position: fixed;
+    }
+
   }
+
 
   @media only screen and (max-width: 600px) {
     
     #contactCard {
         margin: auto;
         padding: 30px;
+        width: 100%;
+    }
+
+    .contactSubmit {
+        width: 25%;
     }
 
     .contactFooter {
@@ -202,5 +351,30 @@
         bottom:0px;
         height:30px;
         width:100%;
+    }
+
+    .submitBtn {
+        font-size: 15px;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .contactFooter {
+        position:fixed;
+        left:0px;
+        bottom:0px;
+        height:30px;
+        width:100%;
+    }
+    
+    #contactCard {
+        margin: auto;
+        padding: 30px;
+        width: 100%;
+    }
+
+    .contactSubmit {
+        width: 30%;
     }
   }
