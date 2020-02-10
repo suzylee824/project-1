@@ -13,7 +13,7 @@ $(document).ready(function() {
       });
 
 let country = "US";
-let keyword = "";
+let keyword = "hits";
 let genre = "ALL";
 var settings = {
   "async": true,
