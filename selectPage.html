@@ -15,7 +15,7 @@
   <script src="https://kit.fontawesome.com/cd40cdb9bb.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 
-  <title>All Out</title>
+  <title>All Out Generate Your Work Out</title>
 </head>
 
 <body>
@@ -37,13 +37,23 @@
 
     <section class="difficulty">
       <h2 id="difficultyHeader">Choose your fitness level: </h2>
+
+      <div id="msgLevel">
+      </div>
+
       <button class="buttonD buttonDiff" id="beginnerBtn" data-diff="beginner">Beginner</button>
       <button class="buttonD buttonDiff" id="intermediateBtn" data-diff="intermediate">Intermediate</button>
       <button class="buttonD buttonDiff" id="advancedBtn" data-diff="advanced">Advanced</button>
+
+
+
     </section>
 
     <section class="targetArea">
       <h2 id="targetAreaHeader">Target Area: </h2>
+
+      <div id="msgTarget">
+      </div>
 
       <div class="firstRowBtn">
         <button class="buttonD buttonTar" id="chest" value="0" data-work="chest">Chest</button>
@@ -58,19 +68,6 @@
 
       <br />
 
-      <section class="musicArea">
-        <h2 id="musicAreaHeader">Choose your music genre: </h2>
-
-        <div class="musicButtons">
-          <button class="buttonD buttonMusic" data-music="rock">Rock</button>
-          <button class="buttonD buttonMusic" data-music="pop">Pop</button>
-          <button class="buttonD buttonMusic" data-music="hipHop">Hip Hop</button>
-          <button class="buttonD buttonMusic" data-music="rNb">R&B</button>
-          <button class="buttonD buttonMusic" data-music="electronic">Electronic</button>
-          <button class="buttonD buttonMusic" data-music="country">Country</button>
-        </div>
-        <br />
-
         <button class="submitBtn">SUBMIT</button>
         <p></p>
 
@@ -78,7 +75,8 @@
 
 
 
-  <script type="text/javascript" src="script.js"></script>
+  <!-- <script type="text/javascript" src="script.js"></script> -->
+  <script type="text/javascript" src="scriptSel.js"></script>
 
 
 </body>
@@ -87,7 +85,7 @@
 <footer class="footer1">
 
   <a class="footerText" href="contactUs.html">Contact // </a>
-  <a class="footerText" href="aboutUs.html">About</a>
+  <a class="footerText" href="aboutUs.html">About Us</a>
 
 </footer>
 
