@@ -63,6 +63,7 @@
     color: white;
 }
 
+
 .contactSubmit {
     border-radius: 5px;
     width: 18%;
@@ -143,6 +144,14 @@
     width: 50%;
 }
 
+.contactFooter{
+    position: fixed;
+}
+
+.input:focus {
+    outline-color: gray;
+}
+
 #cardContent {
     width: 100%;
     margin: auto;
@@ -194,6 +203,19 @@
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#music-key {
+    display:inline-block;
+}
+
+#musicHeader {
+    padding: 5px;
+}
+
+.musicInput {
+    width: 80%;
+    display: inline-block;
 }
 
 .listItem {

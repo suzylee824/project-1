@@ -5,6 +5,13 @@ $(document).ready(function() {
         $(".mapSection").hide().fadeIn(2300);
     });
     
+    $(document).ready(function() {
+      $("#ferry").hide().fadeIn(1000);
+          $("#suzy").hide().fadeIn(1500);
+          $("#armen").hide().fadeIn(2000);
+          $("#isaac").hide().fadeIn(2500);
+      });
+
 let country = "US";
 let keyword = "";
 let genre = "ALL";
@@ -42,7 +49,7 @@ function getURL() {
 return result[0].u;
 }
 $('.musicKey').on('click',function () {
-let input = $('.input').val();
+let input = $('.input').val().trim();
 if (input == " "){
   return
 }
