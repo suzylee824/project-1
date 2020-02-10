@@ -15,19 +15,20 @@ $(document).ready(function() {
 let country = "US";
 let keyword = "hits";
 let genre = "ALL";
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://30-000-radio-stations-and-music-charts.p.rapidapi.com/rapidapi?country="+ country + "&keyword=" + keyword + "&genre=" + genre,
-  "method": "GET",
-  "headers": {
-      "x-rapidapi-host": "30-000-radio-stations-and-music-charts.p.rapidapi.com",
-      "x-rapidapi-key": "c2549711afmshbda3cfdb733d78cp176760jsnf03cbbc8b495"
-  }
-}
+
 
 let result;
 function getRadio() {
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://30-000-radio-stations-and-music-charts.p.rapidapi.com/rapidapi?country="+ country + "&keyword=" + keyword + "&genre=" + genre,
+    "method": "GET",
+    "headers": {
+        "x-rapidapi-host": "30-000-radio-stations-and-music-charts.p.rapidapi.com",
+        "x-rapidapi-key": "c2549711afmshbda3cfdb733d78cp176760jsnf03cbbc8b495"
+    }
+  }
 $.ajax(settings).done(function (response) {
   console.log(response);
    result = response.results;
@@ -38,7 +39,7 @@ $.ajax(settings).done(function (response) {
      link.text(result[i].n)
      link.attr('href',result[0].u);
      row.append(link);
-     $('#musicList').append(row);
+     $('#musicList').prepend(row);
    }
    });
 }
